@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <title>Convert Rupee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    
+   
+
+<body>
+    <div class="center">
+    <h2 style="margin-bottom: 20px">Convert Currency</h2><br >
+        <hr />
+        <input type="number" id="rupee">
+        
+    <div>
+        
+        <button type class="btn btn-primary button" onclick="usd()">Convert into US Dollars</button><br ><h1 id="usdanswer"></h1>
+        <button type class="btn btn-primary button" onclick="cad()">Convert into Canadian Dollar</button><br ><h1 id="cadanswer"></h1>
+        <button type class="btn btn-primary button" onclick="aud()">Convert into Australian Dollars</button><br ><h1 id="audanswer"></h1>
+        <button type class="btn btn-primary button" onclick="euro()">Convert into Euro</button><br ><h1 id="euroanswer"></h1>
+        <button type class="btn btn-primary button" onclick="gbp()">Convert into Great Britain Pound</button><br ><h1 id="gbpanswer"></h1>
+        
+        
+    </div>
+    </div>
+    
+    <script>
+        
+        function usd(){
+            var rupee = document.getElementById("rupee").value;
+            var rupeeToUsd = parseFloat(rupee) * 0.014;
+            
+            if(!isNaN(rupeeToUsd)){
+               
+                    document.getElementById("usdanswer").innerHTML = "Rupee to USD is "+rupeeToUsd;
+               }
+        }
+        
+        function cad(){
+            var rupee2 = document.getElementById("rupee").value;
+            var rupeeToCad = parseFloat(rupee2) * 0.019;
+            
+            if(!isNaN(rupeeToCad)){
+               
+                    document.getElementById("cadanswer").innerHTML = "Rupee to CAD is "+rupeeToCad;
+               }
+        }
+        
+        function aud(){
+            var rupee3 = document.getElementById("rupee").value;
+            var rupeeToAud = parseFloat(rupee3) * 0.020;
+            
+            if(!isNaN(rupeeToAud)){
+               
+                    document.getElementById("audanswer").innerHTML = "Rupee to AUD is "+rupeeToAud;
+               }
+        }
+        
+          function euro(){
+            var rupee4 = document.getElementById("rupee").value;
+            var rupeeToEuro = parseFloat(rupee4) * 0.012;
+            
+            if(!isNaN(rupeeToEuro)){
+               
+                    document.getElementById("euroanswer").innerHTML = "Rupee to Euro is "+rupeeToEuro;
+               }
+        }
+        
+          function gbp(){
+            var rupee5 = document.getElementById("rupee").value;
+            var rupeeToGbp = parseFloat(rupee5) * 0.011;
+            
+            if(!isNaN(rupeeToGbp)){
+               
+                    document.getElementById("gbpanswer").innerHTML = "Rupee to GBP is "+rupeeToGbp;
+               }
+        }
+        
+    </script>
+
+</body>
+</html>

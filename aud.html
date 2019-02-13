@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <title>Convert Rupee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    
+   
+
+<body>
+    <div class="center">
+    <h2 style="margin-bottom: 20px">Convert Currency</h2><br >
+        <hr />
+        <input type="number" id="aud">
+        
+    <div>
+        
+        <button type class="btn btn-primary button" onclick="usd()">Convert into US Dollars</button><br ><h1 id="usdanswer"></h1>
+        <button type class="btn btn-primary button" onclick="cad()">Convert into Canadian Dollar</button><br ><h1 id="cadanswer"></h1>
+        <button type class="btn btn-primary button" onclick="inr()">Convert into INR</button><br ><h1 id="inranswer"></h1>
+        <button type class="btn btn-primary button" onclick="euro()">Convert into Euro</button><br ><h1 id="euroanswer"></h1>
+        <button type class="btn btn-primary button" onclick="gbp()">Convert into Great Britain Pound</button><br ><h1 id="gbpanswer"></h1>
+        
+        
+    </div>
+    </div>
+    
+    <script>
+        
+        function usd(){
+            var aud = document.getElementById("aud").value;
+            var audtousd = parseFloat(aud) * 0.014;
+            
+            if(!isNaN(audtousd)){
+               
+                    document.getElementById("usdanswer").innerHTML = "AUD to USD is "+audtousd;
+               }
+        }
+        
+        function cad(){
+            var aud2 = document.getElementById("aud").value;
+            var audtocad = parseFloat(aud2) * 0.019;
+            
+            if(!isNaN(audtocad)){
+               
+                    document.getElementById("cadanswer").innerHTML = "AUD to CAD is "+audtocad;
+               }
+        }
+        
+        function inr(){
+            var aud3 = document.getElementById("aud").value;
+            var audtoinr = parseFloat(aud3) * 0.020;
+            
+            if(!isNaN(audtoinr)){
+               
+                    document.getElementById("inranswer").innerHTML = "AUD to INR is "+audtoinr;
+               }
+        }
+        
+          function euro(){
+            var aud4 = document.getElementById("aud").value;
+            var audtoeuro = parseFloat(aud4) * 0.012;
+            
+            if(!isNaN(audtoeuro)){
+               
+                    document.getElementById("euroanswer").innerHTML = "AUD to Euro is "+audtoeuro;
+               }
+        }
+        
+          function gbp(){
+            var aud5 = document.getElementById("aud").value;
+            var audtogbp = parseFloat(aud5) * 0.011;
+            
+            if(!isNaN(audtogbp)){
+               
+                    document.getElementById("gbpanswer").innerHTML = "AUD to GBP is "+audtogbp;
+               }
+        }
+        
+    </script>
+
+</body>
+</html>

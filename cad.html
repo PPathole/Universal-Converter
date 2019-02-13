@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <title>Convert Rupee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    
+   
+
+<body>
+    <div class="center">
+    <h2 style="margin-bottom: 20px">Convert Currency</h2><br >
+        <hr />
+        <input type="number" id="cad">
+        
+    <div>
+        
+        <button type class="btn btn-primary button" onclick="usd()">Convert into US Dollars</button><br ><h1 id="usdanswer"></h1>
+        <button type class="btn btn-primary button" onclick="inr()">Convert into INR</button><br ><h1 id="inranswer"></h1>
+        <button type class="btn btn-primary button" onclick="aud()">Convert into Australian Dollars</button><br ><h1 id="audanswer"></h1>
+        <button type class="btn btn-primary button" onclick="euro()">Convert into Euro</button><br ><h1 id="euroanswer"></h1>
+        <button type class="btn btn-primary button" onclick="gbp()">Convert into Great Britain Pound</button><br ><h1 id="gbpanswer"></h1>
+        
+        
+    </div>
+    </div>
+    
+    <script>
+        
+        function usd(){
+            var cad = document.getElementById("cad").value;
+            var cadToUSD = parseFloat(rupee) * 0.75;
+            
+            if(!isNaN(cadToUSD)){
+               
+                    document.getElementById("usdanswer").innerHTML = "CAD to USD is "+cadToUSD;
+               }
+        }
+        
+        function inr(){
+            var cad2 = document.getElementById("cad").value;
+            var cadtoinr = parseFloat(cad2) * 0.019;
+            
+            if(!isNaN(cadtoinr)){
+               
+                    document.getElementById("inranswer").innerHTML = "CAD to INR is "+cadtoinr;
+               }
+        }
+        
+        function aud(){
+            var cad3 = document.getElementById("cad").value;
+            var cadtoaud = parseFloat(cad3) * 0.020;
+            
+            if(!isNaN(cadtoaud)){
+               
+                    document.getElementById("audanswer").innerHTML = "CAD to AUD is "+cadtoaud;
+               }
+        }
+        
+          function euro(){
+            var cad4 = document.getElementById("cad").value;
+            var cadtoeuro = parseFloat(cad4) * 0.012;
+            
+            if(!isNaN(cadtoeuro)){
+               
+                    document.getElementById("euroanswer").innerHTML = "CAD to Euro is "+cadtoeuro;
+               }
+        }
+        
+          function gbp(){
+            var cad5 = document.getElementById("cad").value;
+            var cadtogbp = parseFloat(cad5) * 0.011;
+            
+            if(!isNaN(cadtogbp)){
+               
+                    document.getElementById("gbpanswer").innerHTML = "CAD to GBP is "+cadtogbp;
+               }
+        }
+        
+    </script>
+
+</body>
+</html>
