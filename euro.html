@@ -27,7 +27,7 @@
         
         function usd(){
             var euro = document.getElementById("euro").value;
-            var eurotousd = parseFloat(euro) * 0.014;
+            var eurotousd = parseFloat(euro) * 1.13;
             
             if(!isNaN(eurotousd)){
                
@@ -36,42 +36,42 @@
         }
         
         function cad(){
-            var rupee2 = document.getElementById("rupee").value;
-            var rupeeToCad = parseFloat(rupee2) * 0.019;
+            var euro2 = document.getElementById("euro").value;
+            var eurotocad = parseFloat(euro2) * 1.49;
             
-            if(!isNaN(rupeeToCad)){
+            if(!isNaN(eurotocad)){
                
-                    document.getElementById("cadanswer").innerHTML = "Rupee to CAD is "+rupeeToCad;
+                    document.getElementById("cadanswer").innerHTML = "Euro to CAD is "+eurotocad;
                }
         }
         
         function aud(){
-            var rupee3 = document.getElementById("rupee").value;
-            var rupeeToAud = parseFloat(rupee3) * 0.020;
+            var euro3 = document.getElementById("euro").value;
+            var eurotoaud = parseFloat(euro3) * 1.58;
             
-            if(!isNaN(rupeeToAud)){
+            if(!isNaN(eurotoaud)){
                
-                    document.getElementById("audanswer").innerHTML = "Rupee to AUD is "+rupeeToAud;
+                    document.getElementById("audanswer").innerHTML = "Euro to AUD is "+eurotoaud;
                }
         }
         
-          function euro(){
-            var rupee4 = document.getElementById("rupee").value;
-            var rupeeToEuro = parseFloat(rupee4) * 0.012;
+          function inr(){
+            var euro4 = document.getElementById("euro").value;
+            var eurotorupee = parseFloat(euro4) * 80.01;
             
-            if(!isNaN(rupeeToEuro)){
+            if(!isNaN(eurotorupee)){
                
-                    document.getElementById("euroanswer").innerHTML = "Rupee to Euro is "+rupeeToEuro;
+                    document.getElementById("inranswer").innerHTML = "Euro to INR is "+eurotorupee;
                }
         }
         
           function gbp(){
-            var rupee5 = document.getElementById("rupee").value;
-            var rupeeToGbp = parseFloat(rupee5) * 0.011;
+            var euro5 = document.getElementById("euro").value;
+            var eurotogbp = parseFloat(euro5) * 0.88;
             
-            if(!isNaN(rupeeToGbp)){
+            if(!isNaN(eurotogbp)){
                
-                    document.getElementById("gbpanswer").innerHTML = "Rupee to GBP is "+rupeeToGbp;
+                    document.getElementById("gbpanswer").innerHTML = "Euro to GBP is "+eurotogbp;
                }
         }
         
